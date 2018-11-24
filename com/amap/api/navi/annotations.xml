@@ -1,0 +1,5 @@
+<root>
+    <item name='com.amap.api.navi.MyNaviListener'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

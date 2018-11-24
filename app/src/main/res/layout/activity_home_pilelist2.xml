@@ -1,0 +1,417 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/darkgrey">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="终端详情"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/charging_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="提示"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relative1"
+        android:layout_marginTop="8dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/line21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="电桩编号"
+                            android:textColor="#737373"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="null"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/line22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/pile_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/pile_type"
+                            android:background="@color/green"
+                            android:text="空闲"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/pile_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@color/green"
+                            android:text="慢"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="电桩类型"
+                            android:textColor="#737373"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/textView4"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="null"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="电桩状态"
+                            android:textColor="#737373"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="null"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="16sp"
+                    android:gravity="left|center_vertical"
+                    android:text="充电方式选择" />
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/autoBT"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/mine_selector"
+                        android:text="自动充满"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/mine_selector"
+                        android:text="时间充(时)"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mine_selector"
+                        android:text="金额充(元)"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hideView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/hideTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="充电额：" />
+
+                    <EditText
+                        android:id="@+id/input_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/hideTip"
+                        android:ems="10"
+                        android:inputType="phone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/button2"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/mine_selector"
+                        android:text="电量充(kwh)"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mine_selector"
+                        android:text="进度充(%)"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/pileTypeTV"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_height="28dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="left|center_vertical"
+                    android:text="辅助电源电压选择"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/linear8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button5"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/mine_selector"
+                        android:text="12V"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mine_selector"
+                        android:text="24V"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="left|center_vertical"
+                    android:text="充电端口选择"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/linear10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/port1"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/mine_selector"
+                        android:text="01"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/port2"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mine_selector"
+                        android:text="02"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <Button
+                        android:id="@+id/scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@color/darkblue"
+                        android:text="开始充电"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/stop_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@color/darkblue"
+                        android:text="停止充电"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/pile_notes"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:text="充电参数查询" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

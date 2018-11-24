@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/startIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/welcome" />
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lineView" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_above="@+id/bottomBar"
+        android:background="@color/darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@mipmap/icon_home"></ImageView>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/qr"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:src="@mipmap/icon_qr"></ImageView>-->
+
+            <ImageView
+                android:id="@+id/community"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@mipmap/icon_community"></ImageView>
+
+            <ImageView
+                android:id="@+id/mine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@mipmap/icon_mine"></ImageView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

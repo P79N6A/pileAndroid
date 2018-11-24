@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\2018_Project\\AndroidPile_2018_10_23\\AndroidPile\\BarScan\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\2018_Project\\AndroidPile_2018_10_23\\AndroidPile\\BarScan\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\2018_Project\\AndroidPile_2018_10_23\\AndroidPile\\BarScan\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\qrcode_scan_line.png",
+        "source": "D:\\2018_Project\\AndroidPile_2018_10_23\\AndroidPile\\BarScan\\src\\main\\res\\drawable-mdpi\\qrcode_scan_line.png"
+    }
+]

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    tools:context="com.swust.androidpile.mine.activity.RechargeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="充值中心"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/moneyET"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/relative1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgrey"
+            android:text="充值金额"
+            android:textColor="@color/font"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/moneyET"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/mine_selector"
+            android:text="10元"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mine_selector"
+            android:text="50元"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/mine_selector"
+            android:text="100元"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relative2"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/mine_selector"
+            android:text="300元"
+            android:textSize="12sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/otherMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:hint="其他金额"
+            android:inputType="phone"
+            android:textColor="@color/font"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/starPay"
+            android:layout_weight="1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_selector"
+            android:text="立即充值"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/moneyCount"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/relative3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/itemET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/darkgrey"
+            android:text="应付金额："
+            android:textColor="@color/font"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/moneyPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/itemET"
+            android:background="@color/darkgrey"
+            android:text="--"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/moneyPay"
+            android:background="@color/darkgrey"
+            android:text="元"
+            android:textColor="@color/red" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

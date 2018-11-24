@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey">
+
+    <include
+        android:id="@+id/home_bar"
+        layout="@layout/view_header" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_bar"
+        android:orientation="vertical">
+
+        <com.panxw.android.imageindicator.ImageIndicatorView
+            android:id="@+id/indicate_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/chargingLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/mine_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/chargingIV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/charge_pile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="电站搜索"
+                    android:textColor="@color/font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/billLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/mine_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/billIV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_qr" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="扫码充电"
+                    android:textColor="@color/font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scheduleLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/mine_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/scheduleIV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/charge_progress" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="充电进度"
+                    android:textColor="@color/font" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.swust.androidpile">
+
+    <!-- Android 6.0版本可去除，用于选举信息（通道复用）的同步 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 选举使用，当应用有删除或者更新时需要重新选举，复用推送通道 -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 补偿通道小米PUSH使用，不用可去除 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 补偿通道GCM使用，不使用可去除 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 允许监听启动完成事件 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许访问震动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--相机使用-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--允许读取电话状态SIM的权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许task重排序 -->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!-- 用于读取手机硬件信息等，用于机型过滤 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 手机读写 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 网络访问 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 网络库使用，当网络操作时需要确保事务完成不被杀掉 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".main.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <!-- 高德地图-appKey -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fba2a4825a009aacb027e623f06c3dcf" />
+        <!-- 推送- appKey -->
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="24843478" />
+        <!-- 推送-appSecret -->
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="2bbafe23c624284f3471dc45d6ddb854" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mine.activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.IdentifyingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.AdviceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.AccountInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.CostActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".community.activity.MessageArrayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.activity.QueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.activity.StationDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.activity.PileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.activity.TipActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.citypiles.CityPilesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.activity.ScheduleActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".qr.activity.QRActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.navi.GPSNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <activity
+            android:name=".mine.activity.FindPwdActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.ReModifyPwdActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.VersionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.activity.PendingIntentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mine.activity.RechargeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 接收推送界面 -->
+        <activity
+            android:name=".main.NotificationActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx31c57842cc7e775c" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".wxpay.PayActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver android:name=".wxpay.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 微信结束 -->
+
+
+        <!-- 阿里支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 阿里支付结束 -->
+        <activity
+            android:name=".home.activity.WatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.BillDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.activity.ChargeCostActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 高德地图-service -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- 推送-通道保持服务 -->
+        <service
+            android:name="com.alibaba.sdk.android.push.ChannelService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category android:name="taobao" />
+            </intent-filter>
+        </service>
+        <!-- 推送-消息接收服务 -->
+        <service
+            android:name="com.alibaba.sdk.android.push.MsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </service>
+        <!-- 推送-消息接收增强服务（可提高通知/消息达到率） -->
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.TaobaoRecvService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+        <!-- 推送-消息接收监听器 -->
+        <receiver android:name=".main.MyReceiver">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.taobao.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

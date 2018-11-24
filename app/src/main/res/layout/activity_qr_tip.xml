@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="充电提示"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    
+    <ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_below="@+id/bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" > 
+		<LinearLayout 
+		    android:id="@+id/linear1"
+		    android:orientation="vertical"
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+			    android:textColor="@color/white"
+			    android:gravity="center_vertical"
+			    android:layout_marginTop="15dp"
+			    android:padding="10dp"
+			    android:background="@color/darkblue"
+			    android:text="Tip1   操作顺序\n在扫二维码之前先选择充电方式以及辅助电源电压，并填写正确格式的充电预设值"
+			    android:paddingLeft="15dp"
+				android:textSize="12sp"
+			    android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:id="@+id/textView1"/>
+			<TextView
+			    android:textColor="@color/white"
+			    android:gravity="center_vertical"
+			    android:layout_marginTop="15dp"
+			    android:padding="10dp"
+			    android:background="@color/darkblue"
+				android:textSize="12sp"
+			    android:text="Tip2   充电预设值\n1 按时间充\n  可以输入小数，最多3位数值，包括小数点\n2 按金额充\n  最多3位数值，且只能是整数\n3 自动充满\n  不用填数值"
+			    android:paddingLeft="15dp"
+			    android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:id="@+id/textView2"/>
+		</LinearLayout>
+    </LinearLayout>
+    
+</ScrollView>
+
+</RelativeLayout>

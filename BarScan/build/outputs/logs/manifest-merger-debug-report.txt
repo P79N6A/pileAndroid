@@ -1,0 +1,67 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+uses-permission#android.permission.VIBRATE
+ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:7:22-63
+uses-permission#android.permission.CAMERA
+ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:8:22-62
+uses-feature#android.hardware.camera
+ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:9:5-60
+	android:name
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:9:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:10:5-70
+	android:name
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:10:19-67
+application
+ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:12:5-20:19
+activity#com.zxing.activity.CaptureActivity
+ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:13:9-19:20
+	android:screenOrientation
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:16:13-49
+	android:windowSoftInputMode
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:18:13-60
+	android:configChanges
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:14:13-63
+	android:theme
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:17:13-71
+	android:name
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml:15:13-62
+uses-sdk
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+		ADDED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml
+		INJECTED from D:\2018_Project\AndroidPile_2018_10_23\AndroidPile\BarScan\src\main\AndroidManifest.xml

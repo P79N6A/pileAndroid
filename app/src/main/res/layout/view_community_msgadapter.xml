@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/mine_selector">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/image1">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="16dp"
+                android:text="公告"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_toLeftOf="@+id/community_right">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="16dp"
+                android:text="公告内容"
+                android:textColor="#737373"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/community_right"-->
+            <!--android:layout_width="14dp"-->
+            <!--android:layout_height="14dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:src="@mipmap/ic_forward1" />-->
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/darkgrey" />
+
+</RelativeLayout>

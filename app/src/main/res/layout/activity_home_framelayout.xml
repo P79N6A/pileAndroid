@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="电桩详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/toggleButton1"
+            android:visibility="gone"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/station"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0.01dp"
+                android:layout_marginLeft="0.01dp"
+                android:layout_marginTop="0.01dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="电站"
+                android:textColor="@color/main" />
+
+            <TextView
+                android:id="@+id/pile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0.01dp"
+                android:layout_marginRight="0.01dp"
+                android:layout_marginTop="0.01dp"
+                android:layout_weight="1"
+                android:background="@color/main"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="电桩"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relative1" />
+
+
+</RelativeLayout>

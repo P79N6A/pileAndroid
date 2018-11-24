@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/mine_selector">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/star1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/mine_remark" />
+        />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/star1"
+            android:gravity="center"
+            android:text="@string/rechargeRecode"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_forward1" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/linear3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/mine_selector">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/star3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/mine_money" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/star3"
+            android:gravity="center"
+            android:text="@string/balanceQuery"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_forward1" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/mine_selector">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/star4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/mine_charge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/star4"
+            android:gravity="center"
+            android:text="@string/chargeRecode"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_forward1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/linear3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/relative6"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/mine_selector">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/star6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/mine_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/star6"
+            android:layout_toRightOf="@+id/star6"
+            android:gravity="center"
+            android:text="@string/generalSetting"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_forward1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/linear6"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/mine_selector">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/star2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/mine_version" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/star2"
+            android:gravity="center"
+            android:text="@string/aboutUs"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_forward1" />
+    </RelativeLayout>
+
+</LinearLayout>

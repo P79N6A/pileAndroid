@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        applicationId "com.swust.androidpile"
+        minSdkVersion 15
+        //noinspection ExpiringTargetSdkVersion
+        targetSdkVersion 19
+        versionCode 14
+        versionName "1.2.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+//            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","arm64-v8a","x86_64"
+            abiFilters "armeabi"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'swust_androidpile'
+            keyPassword 'swust123'
+            storeFile file('D:/sign/AndroidPile.keystore')
+            storePassword 'swust123'
+        }
+    }
+
+    buildTypes {
+        release {
+            //代码混淆，true为开启，反之则关闭
+            minifyEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+//冲突解决，要求com.android.support全部使用版本号28.0.0
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '28.0.0'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(path: ':BarScan')
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //下面这2个依赖通常是一起的
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    implementation 'com.panxw.imageindicator:library:1.0.2'//首页图片轮播
+    implementation 'de.hdodenhof:circleimageview:2.1.0'//圆形图片
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'//动态弹出框
+    implementation 'com.aliyun.ams:alicloud-android-push:2.3.7'//阿里云推送
+}

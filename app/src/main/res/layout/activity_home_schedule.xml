@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#171717"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="远大快充"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/query_fenge"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/query_pileid"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/query_fenge"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="桩号：1011"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/query_port"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/query_fenge"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="端口：01"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.swust.androidpile.home.view.ScheduleTop
+        android:id="@+id/schedule1Top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".70"
+        android:background="#171717"></com.swust.androidpile.home.view.ScheduleTop>
+
+    <com.swust.androidpile.home.view.ScheduleBottom
+        android:id="@+id/schedule1Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".23"
+        android:background="#171717"></com.swust.androidpile.home.view.ScheduleBottom>
+
+    <Button
+        android:id="@+id/stopBT"
+        android:layout_weight=".07"
+        android:layout_gravity="top"
+        android:background="#171717"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:text="停止充电"></Button>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!--默认情况下是一个内部颜色为白色的矩形-->  
+    <item 
+        android:state_window_focused="false"
+        >  
+        <shape android:shape="rectangle">  
+            <!--填充颜色为bar颜色-->  
+            <solid android:color="@color/main" />
+        </shape>  
+    </item>  
+    <!--单击时是一个内部颜色为灰色的矩形-->  
+    <item 
+        android:state_pressed="true"
+        > 
+        <shape android:shape="rectangle">  
+            <!--填充颜色为灰色-->  
+            <solid android:color="@color/darkgrey" />  
+        </shape>  
+    </item>  
+</selector>  

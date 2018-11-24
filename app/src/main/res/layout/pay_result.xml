@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.swust.androidpile.mine.activity.BillDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/main">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/nav_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="充值详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/topBar"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/city"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/city"
+            android:gravity="center"
+            android:text="河南远大电力设备有限公司"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/first"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0.01元"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/second">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="商品说明"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="远大快充APP微信充值"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/four">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="创建时间"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="2017-07-27 12：59"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/five">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="交易状态"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/trade_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="交易成功"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seven"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/six">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="商户订单号"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/out_trade_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="12453456577565525144456347"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

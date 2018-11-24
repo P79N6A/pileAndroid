@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pileDetailRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/mine_selector">
+
+            <TextView
+                android:id="@+id/stationName"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="电站名"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/linear2"
+            android:background="@drawable/mine_selector">
+
+            <TextView
+                android:id="@+id/stationType"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="电站类型"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/stationNum"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/stationType"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="电桩总数"
+                android:textColor="@color/green"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/linear3"
+            android:background="@drawable/mine_selector">
+
+            <TextView
+                android:id="@+id/stationAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="电站地址"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

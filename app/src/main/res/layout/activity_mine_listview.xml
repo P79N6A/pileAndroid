@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:text="充电记录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vertical_bar"
+        android:layout_below="@+id/linear1"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/time_line_bg" />
+
+    <com.swust.androidpile.mine.view.SwipeRefreshView
+        android:id="@+id/srl"
+        android:layout_below="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:overScrollMode="never" />
+
+    </com.swust.androidpile.mine.view.SwipeRefreshView>
+
+</RelativeLayout>

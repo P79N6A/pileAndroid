@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">远大快充</string>
+
+    <string-array name="listpersons">
+        <!--<item> 绵阳市</item>-->
+        <item> 济源市</item>
+        <!--<item> 南京市</item>-->
+    </string-array>
+
+    <!--我的界面-->
+    <string name="rechargeRecode">充值记录</string>
+    <string name="balanceQuery">余额查询</string>
+    <string name="chargeRecode">充电记录</string>
+    <string name="generalSetting">通用设置</string>
+    <string name="aboutUs">关于我们</string>
+
+    <!--关于我们界面-->
+    <string name="about"> \t\t\t\t远大快充，由河南远大电力设备有限公司研发设计，于2017年8月上线，是集充电桩查询、导航、充电支付、远程启/停充电等功能的车主服务APP。" </string>
+    <string name="banquan">河南远大电力设备有限公司\t\t\t\t版权所有</string>
+
+</resources>
